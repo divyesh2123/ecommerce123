@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import MyTable from './MyTable';
 
 export default function Home() {
    
@@ -39,7 +40,7 @@ export default function Home() {
             data.map((value,index,array)=> {
 
 
-                return (<div>{value.title} {value.price}</div>)
+                return (<MyTable data={value}></MyTable>)
 
             })
 
