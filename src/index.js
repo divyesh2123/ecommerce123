@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home,{Contact} from './Home';
 import Registration from './Registration';
+import Login from './Login';
+import Accounts from './Accounts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Registration />
+    <Login />
+    <Accounts/>
   </React.StrictMode>
 );
 
