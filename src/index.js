@@ -7,12 +7,21 @@ import Home,{Contact} from './Home';
 import Registration from './Registration';
 import Login from './Login';
 import Accounts from './Accounts';
+import HomeRegistration from './HomeRegistration';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
-    <Accounts/>
+
+    <Provider store={store}>
+
+    <App></App>
+    </Provider>
+    {/* <Login />
+    <Accounts/> */}
+    
   </React.StrictMode>
 );
 
